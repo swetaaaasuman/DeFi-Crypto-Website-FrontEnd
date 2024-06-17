@@ -8,7 +8,7 @@ const FeatureOne = () => {
       <div className="swap-token-container">
         <div className="tokens-container">
           {tokens.map((token, index) => {
-            return <TokenCard id={token} />;
+            return <TokenCard key={index} id={token} />;
           })}
         </div>
         <div className="btn-container">

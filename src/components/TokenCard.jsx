@@ -41,7 +41,8 @@ const TokenCard = ({ id }) => {
             <div className="token-amount">10</div>
             <div className="token-amount-long">
               <div className="token-price">
-                {tokenData.market_data.current_price.usd}
+                {tokenData.market_data?.current_price?.usd ??
+                  "Price not available"}
               </div>
             </div>
           </div>
